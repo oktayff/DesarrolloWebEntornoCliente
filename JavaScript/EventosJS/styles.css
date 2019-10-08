@@ -1,0 +1,29 @@
+#box{
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+.gallery_item {
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+.gallery {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+}
+
+.rojo {
+
+    background: red;
+}

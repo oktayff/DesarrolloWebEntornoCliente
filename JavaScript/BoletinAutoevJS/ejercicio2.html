@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="ejercicio2.js"></script>
+<meta charset="UTF-8"/>
+<title>Ejercicio 2</title>
+</head>
+
+<body>
+
+	<h2> Número total de empleados: <span id="contador"> 3 </span></h2>
+
+	<table border="1" id="miTabla">
+		<tr>
+			<th align="center" id="numemp"><b> Número de empleado </b></th>
+			<th align="center" id="dniemp"><b> DNI </b></th>
+			<th align="center" id="nomemp"><b> Nombre </b></th>
+			<th align="center" id="apemp"><b> Apellidos </b></th>
+		</tr>
+
+		<tr>
+			<td align="center"> 1 </td>
+			<td align="center"> 77332344K </td>
+			<td align="center"> María </td>
+			<td align="center"> Pérez Izquierdo </td>
+		</tr>
+
+		<tr>
+			<td align="center"> 2 </td>
+			<td align="center"> 23445677J </td>
+			<td align="center"> Javier </td>
+			<td align="center"> López Martínez </td>
+		</tr>
+
+		<tr>
+			<td align="center"> 3 </td>
+			<td align="center"> 12345678H </td>
+			<td align="center"> Manuel </td>
+			<td align="center"> Sánchez Martos </td>
+		</tr>
+	</table>
+
+	<input type="submit" onclick="insertar();" value="Insertar empleado"><br>
+
+	<input type="submit" onclick="borrar();" value="Borrar empleado"><br>
+
+	<input type="submit" onclick="modificar();" value="Modificar empleado">
+
+</body>
+</html>
