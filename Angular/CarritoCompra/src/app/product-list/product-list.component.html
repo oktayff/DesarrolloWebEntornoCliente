@@ -1,31 +1,27 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
-  
-  <!-- Mostramos el nombre del producto -->
-  <h3> <!-- Con <a> hacemos que cada nombre sea un link -->
-    <a [title]="product.name + ' details'">
+<div *ngFor="let product of products; index as productId">
+
+  <h3>
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       {{ product.name }}
     </a>
   </h3>
 
-  <!-- Añadimos una descripcion para nuestros productos -->
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
 
-  <!-- Boton para compartir -->
+
   <button (click)="share()">
     Share
   </button>
 
   <app-product-alerts
-    [product]="product">
+    [product]="product" 
     (notify)="onNotify()">
   </app-product-alerts>
-
 </div>
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
